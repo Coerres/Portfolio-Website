@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carina Cordes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c9c3a1a444.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">About my Code</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hello It's me<br><span1>Carina</span1>  <span2>Cordes</span2></h1>
+        </div>
+    </div>
+</div>
+
+<!--about me-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/PortfolioBild.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span3>Me</span3></h1>
+                <p>
+                    <br>Hi, I'm Carina Cordes, a 16-year-old currently training as a software engineer at IMS in St. Gallen.<br><br> Navigating the intricacies of software development, my journey is fueled by a childhood passion for technology. I'm excited to share my coding experiences, projects, and diverse interest.
+                    <br><br>From playing the piano and gaming to staying active and spending time with friends and dogs.<br><br> Looking ahead, I aspire to delve deeper into software engineering (especially Backend) or explore the field of artificial intelligence, with plans for advanced studies to contribute to the evolving tech landscape.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                     
+                        <ul>
+                            <li><span4>C#</span4></li>
+                            <li><span4>C</span4></li>
+                            <li><span4>C++</span4></li>
+                            <li><span4>HTML, CSS, SASS</span4></li>
+                            <li><span4>JavaScript</span4></li>
+                            <li><span4>Bash</span4></li>
+                            <li><span4>PowerShell</span4></li>
+                            <li><span4>MySQL/SQL/SQL-Light</span4MySQL/SQL/SQL-Light</li>
+                            <li><span4>Python</span4></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span4>2021 - Current</span4><br> Student at IMS (computer-science school) in St.Gallen.</li>
+                            <li><span4>September 2023 - October 2023</span4><br>Internship at Creativ-Software AG in Widnau.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span4>2021 - Current</span4><br> Student at IMS (computer-science school) in St. Gallen.</li>
+                            <li><span4>2018 - 2021</span4><br>Secondary School in Thal.</li>
+                            <li><span4>2015 - 2018</span4><br>Middle School in Thal.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--skills-->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">About my <span5>Code</span5></h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Editors</h2>
+                <p>I change editors for different projects each time. For example for HTML, Python or C I use VSC and for C# VS. It depends also how big of a project I had in mind and for what.</p>
+                <a href="https://visualstudio.microsoft.com/de/"><span8>See more</span8></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Strategy</h2>
+                <p>First of all, I always make notes before I start with the project and think about how I wanna start and what features my project should have.</p>
+                <a href="https://strategycoding.com/"><span8>See more</span8></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>GitHub</h2>
+                <p>Everytime I do something, I push it on GitHub to organize my projects and also to show them off and share it with friends or just that my future company can look at my skills.</p>
+                <a href="https://github.com/Coerres"><span8>See more</span8></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My <span6>Projects</span6></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Tetris.png">
+                <div class="layer">
+                    <h3>Tetris in C#</h3>
+                    <p>In this project I did one of the most known games, Tetris, in <span6>C#</span6> with an UI in Xaml. It also has a highscore, so you can play against other people.</p>
+                    <a href="https://github.com/Coerres/Tetris.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SpaceWar.png">
+                <div class="layer">
+                    <h3>SpaceWar</h3>
+                    <p>Here I did a small shooter-game in <span6>Python</span6>, were you have to shoot as many enemies as possible in time.</p>
+                    <a href="https://github.com/Coerres/Space_War.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/TicTacToe.png">
+                <div class="layer">
+                    <h3>TicTacToe</h3>
+                    <p>As you can see, here I made one of the most known games, TicTacToe, in <span6>Python</span6>. You can play it in the Console. </p>
+                    <a href="https://github.com/Coerres/TicTacToe.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Coerres" class="btn">See more</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> carina.cordes.dev@gmail.com</p>
+                <p><i class="fa-solid fa-location-pin"></i> 9422 Staad SG</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Coerres"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/carina-cordes-681910294/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/devcoerres"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://carina.cordes.dev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Carina Cordes</p>
+    </div>
+</div>
+
+<!--JavaScript-->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<!--Google-Sheets-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJYHgiqayi6SL5RGJ2FZHyClycnixXYmjjkDaLaaDrVH9ycpwAOQRI9wvA2P0B_ZnAjg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
